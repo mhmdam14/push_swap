@@ -21,7 +21,7 @@ For this project, I implemented **Turk Sort** to optimize sorting sequences.
 Clone the repository and compile:
 
 ```bash
-git clone https://github.com/your-username/push_swap.git
+git clone https://github.com/mhmdam14/push_swap.git
 cd push_swap
 make         # Compiles push_swap
 make bonus   # Compiles the bonus checker
