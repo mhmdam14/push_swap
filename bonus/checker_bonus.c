@@ -19,46 +19,46 @@ int	check(char *line)
 	int	flag;
 
 	flag = 0;
-	if (!ft_strcmp(line, "pa\n", 3) || !ft_strcmp(line, "pb\n", 3))
+	if (!ft_strcmp(line, "pa\n") || !ft_strcmp(line, "pb\n"))
 		flag = 1;
-	else if (!ft_strcmp(line, "sa\n", 3) || !ft_strcmp(line, "sb\n", 3))
+	else if (!ft_strcmp(line, "sa\n") || !ft_strcmp(line, "sb\n"))
 		flag = 1;
-	else if (!ft_strcmp(line, "ra\n", 3) || !ft_strcmp(line, "rb\n", 3))
+	else if (!ft_strcmp(line, "ra\n") || !ft_strcmp(line, "rb\n"))
 		flag = 1;
-	else if (!ft_strcmp(line, "rra\n", 4) || !ft_strcmp(line, "rrb\n", 4))
+	else if (!ft_strcmp(line, "rra\n") || !ft_strcmp(line, "rrb\n"))
 		flag = 1;
-	else if (!ft_strcmp(line, "ss\n", 3))
+	else if (!ft_strcmp(line, "ss\n"))
 		flag = 1;
-	else if (!ft_strcmp(line, "rr\n", 3))
+	else if (!ft_strcmp(line, "rr\n"))
 		flag = 1;
-	else if (!ft_strcmp(line, "rrr\n", 4))
+	else if (!ft_strcmp(line, "rrr\n"))
 		flag = 1;
 	return (flag);
 }
 
 void	execute(t_stack *a, t_stack *b, char *line)
 {
-	if (!ft_strcmp(line, "pa\n", 3))
+	if (!ft_strcmp(line, "pa\n"))
 		push(a, b);
-	else if (!ft_strcmp(line, "pb\n", 3))
+	else if (!ft_strcmp(line, "pb\n"))
 		push(b, a);
-	else if (!ft_strcmp(line, "sa\n", 3))
+	else if (!ft_strcmp(line, "sa\n"))
 		swap(a);
-	else if (!ft_strcmp(line, "sb\n", 3))
+	else if (!ft_strcmp(line, "sb\n"))
 		swap(b);
-	else if (!ft_strcmp(line, "ra\n", 3))
+	else if (!ft_strcmp(line, "ra\n"))
 		rotate(a);
-	else if (!ft_strcmp(line, "rb\n", 3))
+	else if (!ft_strcmp(line, "rb\n"))
 		rotate(b);
-	else if (!ft_strcmp(line, "rra\n", 4))
+	else if (!ft_strcmp(line, "rra\n"))
 		reverse_rotate(a);
-	else if (!ft_strcmp(line, "rrb\n", 4))
+	else if (!ft_strcmp(line, "rrb\n"))
 		reverse_rotate(b);
-	else if (!ft_strcmp(line, "ss\n", 3))
+	else if (!ft_strcmp(line, "ss\n"))
 		swap_ab(a, b);
-	else if (!ft_strcmp(line, "rr\n", 3))
+	else if (!ft_strcmp(line, "rr\n"))
 		rotate_ab(a, b);
-	else if (!ft_strcmp(line, "rrr\n", 4))
+	else if (!ft_strcmp(line, "rrr\n"))
 		reverse_rotate_ab(a, b);
 }
 

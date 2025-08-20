@@ -14,7 +14,7 @@
 # define CHECKER_BONUS_H
 # include "../push_swap.h"
 
-int		ft_strcmp(const char *s1, const char *s2, size_t n);
+int		ft_strcmp(const char *s1, const char *s2);
 void	swap_ab(t_stack *a, t_stack *b);
 void	rotate_ab(t_stack *a, t_stack *b);
 void	reverse_rotate_ab(t_stack *a, t_stack *b);
